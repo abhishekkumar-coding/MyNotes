@@ -1,0 +1,47 @@
+nextjs (Main Folder)
+📄 01_basics.md - Next.js Basics (What is Next.js, Features, Advantages over React)
+
+📄 02_project_setup.md - Project Setup (Installation, File Structure, pages/ vs app/ directory)
+
+📄 03_pages_vs_app.md - Pages Router vs App Router (Key Differences, When to Use Which)
+
+📄 04_routing.md - Routing in Next.js (Dynamic Routes, Catch-All Routes, Nested Routes)
+
+📄 05_layouts.md - Layouts & Nested Layouts (_app.js, layout.tsx, Reusable Layouts)
+
+📄 06_static_dynamic.md - Static vs Dynamic Rendering (SSG, SSR, ISR, CSR, RSC)
+
+📄 07_server_actions.md - Server Actions & API Routes (app/api/ vs pages/api/)
+
+📄 08_data_fetching.md - Data Fetching Methods (getStaticProps, getServerSideProps, useEffect)
+
+📄 09_api_routes.md - API Routes (Creating Backend Endpoints in Next.js)
+
+📄 10_authentication.md - Authentication in Next.js (NextAuth.js, JWT, OAuth, Credentials Provider)
+
+📄 11_middleware.md - Middleware in Next.js (Usage, Authentication, Redirections, Logging)
+
+📄 12_image_optimization.md - Image Optimization (next/image, Automatic Lazy Loading)
+
+📄 13_fonts_optimization.md - Fonts Optimization (next/font, Self-Hosting Google Fonts)
+
+📄 14_css_styling.md - Styling in Next.js (CSS Modules, Tailwind CSS, Styled Components)
+
+📄 15_state_management.md - State Management (Context API, Redux, Zustand, Jotai)
+
+📄 16_performance.md - Performance Optimization (Code Splitting, Lazy Loading, Prefetching)
+
+📄 17_deployment.md - Deployment (Vercel, AWS, Docker, CI/CD, Static Export)
+
+📄 18_seo.md - SEO & Metadata (next/head, metadata.ts, Open Graph, Schema.org)
+
+📄 19_internationalization.md - Internationalization (i18n) (Multi-language Support, next-intl)
+
+📄 20_analytics.md - Analytics in Next.js (Google Analytics, Vercel Analytics, Custom Tracking)
+
+📄 21_testing.md - Testing in Next.js (Jest, React Testing Library, Cypress)
+
+📄 22_pwa.md - Making Next.js a PWA (Service Workers, Manifest, Offline Support)
+
+📄 23_nextjs_interview_questions.md - Common Next.js Interview Questions & Answers
+
