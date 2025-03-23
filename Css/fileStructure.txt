@@ -1,0 +1,47 @@
+css (Main Folder)
+📄 01_basics.md - CSS Basics (What is CSS, Selectors, Properties, Syntax)
+
+📄 02_box_model.md - Box Model (Margin, Padding, Border, Content)
+
+📄 03_units.md - CSS Units (px, em, rem, %, vw, vh, etc.)
+
+📄 04_selectors.md - Selectors & Specificity (Universal, ID, Class, Attribute, Pseudo-classes)
+
+📄 05_positions.md - Positioning (Static, Relative, Absolute, Fixed, Sticky)
+
+📄 06_flexbox.md - Flexbox (Flex Container, Flex Items, Properties, Use Cases)
+
+📄 07_grid.md - CSS Grid (Grid Container, Grid Items, Tracks, Areas)
+
+📄 08_display_visibility.md - Display & Visibility (display, visibility, opacity)
+
+📄 09_overflow.md - Overflow & Scrollbars (overflow, scroll-behavior)
+
+📄 10_zindex.md - Z-Index & Stacking Context (Layering Elements, Debugging Issues)
+
+📄 11_pseudo_classes_elements.md - Pseudo-Classes & Pseudo-Elements (:hover, :nth-child(), ::before, ::after)
+
+📄 12_transforms.md - CSS Transforms (Translate, Rotate, Scale, Skew)
+
+📄 13_transitions.md - CSS Transitions (Timing Functions, Duration, Delay)
+
+📄 14_animations.md - CSS Animations (@keyframes, Animation Properties)
+
+📄 15_responsive_design.md - Responsive Design (Media Queries, Breakpoints, Mobile-first)
+
+📄 16_variables.md - CSS Variables (Custom Properties) (var(), :root)
+
+📄 17_scss_sass.md - SCSS & SASS (Variables, Mixins, Nesting, Functions)
+
+📄 18_bem.md - BEM Methodology (Block, Element, Modifier)
+
+📄 19_utility_frameworks.md - Utility-First Frameworks (Tailwind CSS, Bootstrap)
+
+📄 20_dark_mode.md - Dark Mode Implementation (CSS Variables, Prefers-Color-Scheme)
+
+📄 21_browser_compatibility.md - Browser Compatibility & Prefixes (autoprefixer, @supports)
+
+📄 22_performance_optimization.md - Performance Optimization (Minification, Critical CSS, Lazy Loading)
+
+📄 23_css_interview_questions.md - Common CSS Interview Questions & Answers
+
