@@ -1,0 +1,44 @@
+ react (Main Folder)
+📄 01_basics.md - React Basics (JSX, Components, Props, State, Virtual DOM)
+
+📄 02_components.md - Components in Detail (Class vs Functional, Lifecycle, Hooks)
+
+📄 03_hooks.md - React Hooks (useState, useEffect, useRef, useMemo, useCallback, etc.)
+
+📄 04_event_handling.md - Event Handling (onClick, onChange, Synthetic Events)
+
+📄 05_forms.md - Forms in React (Controlled vs Uncontrolled, Form Validation)
+
+📄 06_router.md - React Router (Routing, Navigation, Protected Routes, Dynamic Routes)
+
+📄 07_state_management.md - State Management (Context API, Redux, Zustand, Recoil)
+
+📄 08_api_integration.md - API Integration (Fetching Data using fetch, Axios, SWR, React Query)
+
+📄 09_performance_optimization.md - Performance Optimization (Memoization, Lazy Loading, Code Splitting, React Profiler)
+
+📄 10_react_dom.md - React DOM & Refs (ReactDOM, createRef, forwardRef)
+
+📄 11_portals.md - React Portals (Rendering outside Root, Use Cases)
+
+📄 12_hoc.md - Higher-Order Components (HOC) (Concept, Use Cases)
+
+📄 13_render_props.md - Render Props (Concept, Use Cases)
+
+📄 14_context_api.md - Context API (Global State Management)
+
+📄 15_error_boundaries.md - Error Boundaries (Catching Errors in Components)
+
+📄 16_custom_hooks.md - Custom Hooks (Creating Reusable Hooks)
+
+📄 17_react_testing.md - Testing in React (Jest, React Testing Library, Cypress)
+
+📄 18_react_ssr.md - Server-Side Rendering (SSR) & Static Generation (SSG) (Next.js Concepts)
+
+📄 19_react_pwa.md - Progressive Web Apps (PWA) in React (Service Workers, Caching)
+
+📄 20_react_native.md - React Native Basics (For Mobile Development)
+
+📄 21_advanced_patterns.md - Advanced React Patterns (Compound Components, Provider Patterns, etc.)
+
+📄 22_react_interview_questions.md - Common React Interview Questions & Answers
