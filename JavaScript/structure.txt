@@ -1,0 +1,30 @@
+js (Main Folder)
+📄 01_basics.md - JS Basics (Variables, Data Types, Operators, etc.)
+
+📄 02_control_flow.md - Control Flow (If-Else, Loops, Switch, etc.)
+
+📄 03_functions.md - Functions & Scope (Hoisting, Closures, Callbacks, etc.)
+
+📄 04_objects.md - Objects & Prototypes (Prototype Chain, OOP in JS, etc.)
+
+📄 05_arrays.md - Arrays & Methods (Map, Filter, Reduce, etc.)
+
+📄 06_asynchronous.md - Asynchronous JS (Promises, Async/Await, Event Loop)
+
+📄 07_dom.md - DOM Manipulation (Selectors, Events, Manipulating Elements)
+
+📄 08_es6_plus.md - ES6+ Features (Arrow Functions, Destructuring, Spread, etc.)
+
+📄 09_modules.md - Modules & Imports (CommonJS, ES Modules)
+
+📄 10_error_handling.md - Error Handling (Try-Catch, Custom Errors)
+
+📄 11_event_loop.md - Event Loop & Call Stack (Microtasks, Macrotasks)
+
+📄 12_design_patterns.md - Design Patterns (Singleton, Factory, Observer, etc.)
+
+📄 13_data_structures.md - DS in JS (Stacks, Queues, Linked Lists, Trees, etc.)
+
+📄 14_algorithms.md - Algorithms (Sorting, Searching, Recursion, etc.)
+
+📄 15_interview_questions.md - Common JS Interview Questions & Answers
