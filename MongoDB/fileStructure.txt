@@ -1,0 +1,41 @@
+mongodb (Main Folder)
+📄 01_basics.md - MongoDB Basics (What is MongoDB, NoSQL vs SQL, Features)
+
+📄 02_installation.md - Installation & Setup (MongoDB Compass, Mongo Shell, MongoDB Atlas)
+
+📄 03_databases.md - Databases & Collections (Creating, Deleting, Switching Databases)
+
+📄 04_documents.md - Documents & BSON (Schema, Data Types, CRUD Operations)
+
+📄 05_queries.md - Querying Data (find(), Filters, Sorting, Projection, Pagination)
+
+📄 06_aggregation.md - Aggregation Framework (Pipeline, $match, $group, $project, etc.)
+
+📄 07_indexes.md - Indexes (Types of Indexes, Performance Optimization)
+
+📄 08_relationships.md - Data Relationships (Embedding vs Referencing, $lookup, Population)
+
+📄 09_schema_design.md - Schema Design & Best Practices (Normalization vs Denormalization)
+
+📄 10_transactions.md - Transactions in MongoDB (ACID Compliance, Multi-Document Transactions)
+
+📄 11_replication.md - Replication & High Availability (Replica Sets, Failover, Read Preference)
+
+📄 12_sharding.md - Sharding & Scalability (Partitioning, Config Servers, Balancing)
+
+📄 13_security.md - Security Best Practices (Authentication, Authorization, Role-Based Access)
+
+📄 14_performance.md - Performance Optimization (Query Optimization, Indexing Strategies)
+
+📄 15_backup_restore.md - Backup & Restore (mongodump, mongorestore, Atlas Backups)
+
+📄 16_mongodb_with_node.md - Using MongoDB with Node.js (Mongoose, Native Driver, CRUD Operations)
+
+📄 17_mongodb_with_express.md - MongoDB with Express.js (Connecting, Schema Validation, API Setup)
+
+📄 18_mongodb_with_graphql.md - MongoDB with GraphQL (Apollo, Resolvers, Queries, Mutations)
+
+📄 19_mongodb_atlas.md - MongoDB Atlas (Cloud Setup, Free Tier, Security Configurations)
+
+📄 20_mongodb_interview_questions.md - Common MongoDB Interview Questions & Answers
+
