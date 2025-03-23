@@ -1,0 +1,46 @@
+nodejs (Main Folder)
+📄 01_basics.md - Node.js Basics (What is Node.js, Features, Advantages)
+
+📄 02_modules.md - Node.js Modules (Built-in Modules, CommonJS vs ES Modules, Import/Export)
+
+📄 03_npm_yarn.md - NPM & Yarn (Package Management, package.json, scripts)
+
+📄 04_event_loop.md - Event Loop & Async Nature (Call Stack, Event Queue, Microtasks, Macrotasks)
+
+📄 05_fs_module.md - File System (fs) Module (Reading/Writing Files, Streams, Buffers)
+
+📄 06_http_module.md - HTTP Module (Creating a Server, Handling Requests & Responses)
+
+📄 07_express_basics.md - Express.js Basics (Routing, Middleware, Request-Response Cycle)
+
+📄 08_middleware.md - Middleware in Express (Types of Middleware, Custom Middleware)
+
+📄 09_rest_api.md - Building a REST API (CRUD Operations, Express Router, Controllers)
+
+📄 10_authentication.md - Authentication & Authorization (JWT, OAuth, Sessions, Passport.js)
+
+📄 11_database.md - Database Integration (MongoDB, Mongoose, PostgreSQL, MySQL, Sequelize, Prisma)
+
+📄 12_async_node.md - Asynchronous Programming (Callbacks, Promises, Async/Await, Error Handling)
+
+📄 13_websockets.md - WebSockets & Real-Time Communication (Socket.io, Event Emitters)
+
+📄 14_caching.md - Caching Strategies (Redis, In-Memory Caching, CDN)
+
+📄 15_file_uploads.md - File Uploads & Streaming (Multer, GridFS, File Handling)
+
+📄 16_background_jobs.md - Background Jobs & Queues (Bull, Agenda, Worker Threads)
+
+📄 17_testing.md - Testing in Node.js (Jest, Mocha, Chai, Supertest)
+
+📄 18_security.md - Security Best Practices (Helmet, CORS, Rate Limiting, CSRF, XSS, SQL Injection)
+
+📄 19_performance.md - Performance Optimization (Clustering, Load Balancing, PM2, Profiling)
+
+📄 20_deployment.md - Deployment & Scaling (Docker, CI/CD, Cloud Platforms, Load Balancing)
+
+📄 21_microservices.md - Microservices in Node.js (Architecture, gRPC, API Gateway)
+
+📄 22_serverless.md - Serverless with Node.js (AWS Lambda, Firebase Functions, Vercel)
+
+📄 23_node_interview_questions.md - Common Node.js Interview Questions & Answers
