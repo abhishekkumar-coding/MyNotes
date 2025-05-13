@@ -596,4 +596,22 @@ Here are some commonly used clauses with the `SELECT` query:
 
 These clauses help refine and organize the results returned by a `SELECT` query.
 
+### CASE Statement (Conditional Logic in SELECT)
+
+The `CASE` statement in SQL allows you to apply conditional logic directly within the `SELECT` clause. It works like an `if-else` ladder and helps return different values based on column conditions.
+
+#### Example:
+
+```sql
+SELECT 
+  name,
+  marks,
+  CASE 
+    WHEN marks >= 90 THEN 'Excellent'
+    WHEN marks >= 75 THEN 'Good'
+    WHEN marks >= 50 THEN 'Average'
+    ELSE 'Fail'
+  END AS result
+FROM students;
+```
 
