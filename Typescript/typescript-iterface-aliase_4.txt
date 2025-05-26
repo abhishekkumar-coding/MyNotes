@@ -1,0 +1,89 @@
+# Content for "Introduction to Interfaces & Type Aliases"
+typescript_interfaces_types = """\
+Introduction to Interfaces & Type Aliases in TypeScript
+
+1. Interfaces:
+   - An interface defines the shape of an object.
+   - Used to describe the structure, properties, and types an object should have.
+   - Can be extended using `extends`.
+
+   Syntax:
+   interface InterfaceName {
+     propertyName: type;
+     optionalProperty?: type;
+   }
+
+   Example:
+   interface User {
+     name: string;
+     age: number;
+     isAdmin?: boolean; // optional property
+   }
+
+   const user1: User = {
+     name: "Alice",
+     age: 28
+   };
+
+   // Extending interfaces
+   interface Employee extends User {
+     employeeId: number;
+   }
+
+   const emp: Employee = {
+     name: "Bob",
+     age: 35,
+     employeeId: 101
+   };
+
+2. Type Aliases:
+   - A type alias gives a name to any type (primitive, union, intersection, object, etc.).
+   - More flexible than interfaces.
+
+   Syntax:
+   type AliasName = type;
+
+   Example:
+   type Point = {
+     x: number;
+     y: number;
+   };
+
+   const p1: Point = { x: 10, y: 20 };
+
+   // Union types
+   type Status = "success" | "error" | "loading";
+   let currentStatus: Status = "loading";
+
+   // Intersection types
+   type Person = {
+     name: string;
+   };
+
+   type Contact = {
+     email: string;
+   };
+
+   type PersonWithContact = Person & Contact;
+
+   const personInfo: PersonWithContact = {
+     name: "Charlie",
+     email: "charlie@example.com"
+   };
+
+3. Key Differences Between Interface and Type:
+   - Interface is primarily used for object shapes.
+   - Type can alias any type (not just object shapes).
+   - Interface supports declaration merging (can be redefined and extended).
+   - Type is more flexible for complex type definitions.
+
+4. When to Use:
+   - Use `interface` for object structures and when you expect them to be extended or implemented.
+   - Use `type` for unions, intersections, primitives, or complex combinations.
+
+Summary:
+- Interfaces and Type Aliases help describe the structure and types of data in TypeScript.
+- Both improve code readability, maintainability, and type safety.
+"""
+
+

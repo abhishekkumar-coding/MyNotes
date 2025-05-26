@@ -1,0 +1,67 @@
+Introduction to Type Inference & Type Annotations in TypeScript
+
+1. Type Inference:
+   - TypeScript automatically infers the type of a variable when it's declared and initialized.
+   - This means you don't have to explicitly provide a type in many cases.
+
+   Example:
+   let message = "Hello, world!";
+   // TypeScript infers that message is of type string
+
+   let count = 10;
+   // Inferred as number
+
+   function add(a: number, b: number) {
+     return a + b;
+   }
+   // Type of return is inferred as number
+
+   Benefits:
+   - Reduces verbosity
+   - Still provides type safety
+   - Helps catch errors without requiring full annotations
+
+2. Type Annotations:
+   - Explicitly defining the type of a variable, function parameter, or return type.
+   - Useful when:
+     - The type isn't obvious
+     - You want better readability
+     - Working in teams
+     - Preventing unexpected behavior
+
+   Syntax:
+   let variableName: type = value;
+
+   Examples:
+   let username: string = "Alice";
+   let isLoggedIn: boolean = true;
+   let score: number = 100;
+
+   function greet(name: string): string {
+     return "Hello, " + name;
+   }
+
+   const multiply = (x: number, y: number): number => {
+     return x * y;
+   };
+
+3. Combining Inference and Annotations:
+   - You can use type annotations where necessary and rely on inference elsewhere.
+
+   Example:
+   let user = {
+     name: "John",
+     age: 30
+   };
+   // Inferred as { name: string; age: number }
+
+   You may annotate like this for clarity:
+   let user: { name: string; age: number } = {
+     name: "John",
+     age: 30
+   };
+
+Summary:
+- Type Inference helps reduce boilerplate code.
+- Type Annotations improve clarity and prevent type-related bugs.
+- TypeScript balances both to provide strong static typing.

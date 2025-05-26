@@ -1,0 +1,42 @@
+Extending Interfaces in TypeScript
+
+🔹 What is Interface Extension?
+In TypeScript, interface extension allows you to build upon existing interfaces by adding more properties
+
+interface BaseInterface {
+  property1: type;
+}
+
+interface ExtendedInterface extends BaseInterface {
+  property2: type;
+}
+
+
+interface Person {
+  name: string;
+  age: number;
+}
+
+interface Employee extends Person {
+  employeeId: number;
+  department: string;
+}
+
+const emp1: Employee = {
+  name: "Alice",
+  age: 30,
+  employeeId: 101,
+  department: "HR"
+};
+
+
+✅ In this example:
+Employee inherits all properties from Person.
+Additional fields employeeId and department are added.
+
+🔍 Key Points:
+You can extend one or more interfaces using extends.
+
+Extended interfaces inherit all members of base interfaces.
+
+Child interfaces can also add new members or optional fields.

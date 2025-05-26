@@ -1,0 +1,75 @@
+ What are Intersection Types?
+Intersection Types combine multiple types into one. A variable of an intersection type must satisfy all the combined types.
+
+Think of it like merging multiple type definitions — the resulting type must have all the required properties from each type.
+
+✅ Syntax
+type A = { ... };
+type B = { ... };
+type C = A & B;
+
+
+📌 Example 1: Basic Intersection of Two Object Types
+type Person = {
+  name: string;
+  age: number;
+};
+
+type Employee = {
+  employeeId: number;
+};
+
+type Staff = Person & Employee;
+
+const staffMember: Staff = {
+  name: "Alice",
+  age: 30,
+  employeeId: 101
+};
+
+✅ Staff must include all properties from both Person and Employee.
+
+📌 Example 2: Intersection with Optional Propertiesjjjj
+type Contact = {
+  email: string;
+  phone?: string;
+};
+
+type Customer = {
+  name: string;
+  isPremium: boolean;
+};
+
+type PremiumCustomer = Contact & Customer;
+
+const premiumUser: PremiumCustomer = {
+  name: "John",
+  email: "john@example.com",
+  isPremium: true
+};
+✅ Optional properties remain optional after merging.
+
+📌 Example 3: Intersection of Function Signatures
+type Clickable = {
+  onClick: () => void;
+};
+
+type Hoverable = {
+  onHover: () => void;
+};
+
+type Interactive = Clickable & Hoverable;
+
+const button: Interactive = {
+  onClick: () => console.log("Clicked"),
+  onHover: () => console.log("Hovered")
+};
+✅ All methods must be implemented.
+
+🔍 Use Cases
+When a value must conform to multiple types at once.
+
+For combining reusable types like behaviors (e.g., Draggable, Resizable, Clickable).
+
+For complex component props in React or object schemas in backend APIs.
+

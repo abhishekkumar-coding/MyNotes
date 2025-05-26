@@ -1,0 +1,76 @@
+Introduction to Basic Types in TypeScript
+
+1. Primitive Types:
+   - number: Represents numeric values.
+     Example: let age: number = 25;
+   - string: Represents text.
+     Example: let name: string = "John";
+   - boolean: True or false values.
+     Example: let isStudent: boolean = true;
+
+2. Arrays:
+   - Represents a list of values.
+     Example: let numbers: number[] = [1, 2, 3];
+     Example: let fruits: Array<string> = ["apple", "banana"];
+
+3. Tuples:
+   - Fixed-length array with specified types.
+     Example: let person: [string, number] = ["Alice", 30];
+
+4. Objects:
+   - Custom structures with defined property types.
+     Example: 
+     let user: { name: string; age: number } = {
+       name: "Bob",
+       age: 40
+     };
+
+5. Enums:
+   - Named constants, useful for readable code.
+     Example:
+     enum Direction {
+       Up,
+       Down,
+       Left,
+       Right
+     }
+     let dir: Direction = Direction.Up;
+
+6. Any:
+   - Disables type checking.
+     Example: let data: any = 10; data = "hello";
+
+7. Unknown:
+   - Like `any`, but safer. Type must be checked before usage.
+     Example: 
+     let value: unknown = "test";
+     if (typeof value === "string") {
+       console.log(value.toUpperCase());
+     }
+
+8. Void:
+   - Used for functions that do not return a value.
+     Example:
+     function logMessage(message: string): void {
+       console.log(message);
+     }
+
+9. Null and Undefined:
+   - Represent absence of value.
+     Example:
+     let nothing: null = null;
+     let notAssigned: undefined = undefined;
+
+10. Never:
+    - Represents functions that never return.
+      Example:
+      function throwError(): never {
+        throw new Error("Something went wrong");
+      }
+
+11. Literal Types:
+    - Restrict variable to exact value.
+      Example:
+      let direction: "left" | "right" = "left";
+
+This is a quick guide to some of the most commonly used basic types in TypeScript.

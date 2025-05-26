@@ -1,0 +1,45 @@
+ What is a Type Alias?
+A Type Alias in TypeScript allows you to create a custom name for any type, including primitives, object types, union types, intersection types, tuples, arrays, and more. It makes your code more readable, reusable, and maintainable.
+
+type AliasName = type;
+
+📌 Example 1: Primitive Type Alias
+type ID = number;
+let userId: ID = 101;
+
+ Here, ID is just an alias for number.
+
+  Example 2: Object Type Alias
+type User = {
+  name: string;
+  age: number;
+};
+
+const user1: User = {
+  name: "Alice",
+  age: 25
+};
+✅ This helps simplify complex object structures by giving them a name.
+
+📌 Example 3: Union Types
+type Status = "success" | "error" | "loading";
+let currentStatus: Status = "loading";
+✅ Useful when a variable can hold a set of defined string literals.
+
+📌 Example 4: Intersection Types
+type Person = {
+  name: string;
+};
+
+type Employee = {
+  employeeId: number;
+};
+
+type Staff = Person & Employee;
+
+const staffMember: Staff = {
+  name: "Bob",
+  employeeId: 2001
+};
+✅ Combines multiple types into one
+
