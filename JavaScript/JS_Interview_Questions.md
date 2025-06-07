@@ -22,3 +22,32 @@ Null	Represents an intentional absence of value	let y = null;
 Object	Collection of key-value pairs	let user = { name: "John", age: 25 };
 Array	Ordered list of values	let arr = [1, 2, 3, 4];
 Function	A block of reusable code	function greet() { return "Hello"; }
+
+## ❓ Q: `require` aur `import` mein kya antar hai?
+
+### ✅ Answer:
+
+| Feature            | `require()`                             | `import`                                |
+|--------------------|------------------------------------------|------------------------------------------|
+| Module System      | CommonJS                                | ES6 Modules                              |
+| Platform           | Node.js (backend)                       | React, Next.js, Modern JS (frontend)     |
+| Syntax             | `const fs = require('fs')`              | `import fs from 'fs'`                    |
+| Synchronous        | Haan (line-by-line load hota hai)       | Nahin (compile time par decide hota hai) |
+| Dynamic Import     | Possible directly                       | Possible with `import()` syntax          |
+| Use in Browser     | Nahin                                   | Haan (after transpile via Babel/Webpack) |
+
+---
+
+## 📌 Kab kya use karein?
+
+- **Node.js backend project**: `require()` use karein.
+- **React / Next.js / Frontend apps**: `import` use karein.
+
+---
+
+## 🧪 Examples
+
+### 🔹 Using `require` (Node.js):
+```js
+const fs = require('fs');
+const express = require('express');
