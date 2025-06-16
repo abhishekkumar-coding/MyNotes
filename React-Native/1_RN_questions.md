@@ -299,7 +299,7 @@ In React Native, styles can be defined using either **object literals** or **`St
 
 ## 🧾 Object Literal Styles
 # ✅ Pros:
-uick and simple for inline or dynamic styles.
+Quick and simple for inline or dynamic styles.
 Easy to use with conditional styling (based on state or props).
 
 # 🚫 Cons:
@@ -319,3 +319,283 @@ Ideal for reusable and static styles.
 Less readable for inline or dynamic styles.
 Can lead to prop drilling for dynamic styles.
 Slightly more boilerplate.
+
+### 1. What is React Native, and how is it different from React?
+React Native is a JavaScript framework developed by Meta (Facebook) for building mobile applications for iOS and Android using React.
+React (ReactJS) is used for building web applications using HTML and the DOM.
+React Native uses native mobile components like View, Text, and Image instead of web elements like div, span, and img.
+React Native apps are compiled into native code, offering better performance on mobile devices.
+
+### 2. What are the core components of React Native?
+Answer:
+Key core components in React Native include:
+View – The basic container for layout and styling, similar to a <div>.
+Text – Used to render text on the screen.
+Image – Displays images.
+ScrollView – A container that supports scrolling.
+TextInput – For user input fields.
+TouchableOpacity / Pressable – Used for touchable/tap interactions.
+FlatList / SectionList – For rendering scrollable lists.
+
+### 3. How does React Native work under the hood?
+Answer:
+React Native uses a JavaScript bridge to connect JavaScript code to native platform APIs:
+The JavaScript code runs in a separate thread using the JavaScript engine (e.g., Hermes or JavaScriptCore).
+UI commands (like rendering a View or Text) are sent to the native side via a bridge.
+The native platform renders the UI components and handles native gestures.
+This allows React Native to provide a native look and feel with JavaScript logic.
+
+### 4. How do you create a new React Native project?
+Using React Native CLI:
+
+** npx @react-native-community/cli init  **
+
+### 5. What are some differences between View, Text, and ScrollView components?
+Answer:
+View: A basic container used to style and arrange elements. Similar to a <div> in web.
+Text: Used only to display text. Must wrap any text content in React Native.
+ScrollView: Used to display scrollable content. Suitable for small lists or vertical scrollable content. For large lists, use FlatList.
+
+### 6. How does styling work in React Native?
+Answer:
+React Native uses JavaScript objects for styling instead of CSS.
+You can use StyleSheet.create() or inline styles:
+
+### 7. How is state managed in React Native?
+Answer:
+React Native uses the same state management approach as React:
+Local state with useState() or this.setState() in class components.
+For global state, libraries like Context API, Redux, Recoil, or Zustand can be used.
+
+### 8. What is the difference between props and state?
+Answer:
+
+- props: Short for "properties". Passed from parent to child. Read-only.
+- state: Maintained within the component. Can be changed using setState() or useState().
+
+| Feature | Props            | State                  |
+| ------- | ---------------- | ---------------------- |
+| Source  | Parent component | Local to the component |
+| Mutable | No               | Yes                    |
+| Usage   | Configuration    | Dynamic data           |
+
+### 9. How do you handle user input in React Native?
+Answer:
+Using TextInput and useState():
+
+### ⚙️ 10. What is React Navigation? How do you implement Stack Navigation?
+React Navigation is a popular library in React Native used for routing and navigating between different screens (pages) in a mobile app. It supports various types of navigators like Stack, Tab, Drawer, etc., and helps manage the app's navigation state.
+
+### ⚙️ 11. What is the difference between Stack, Tab, and Drawer Navigation?
+
+| Navigation Type       | Description                                                                                   | UI/Usage                                                               |
+| --------------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Stack Navigation**  | Navigates like a stack of cards (push/pop). Best for moving between screens in a linear flow. | Back button supported; like moving from login to dashboard to details. |
+| **Tab Navigation**    | Shows multiple tabs at the bottom (or top) for switching between screens.                     | Ideal for apps with separate sections like Home, Profile, Settings.    |
+| **Drawer Navigation** | Uses a sidebar drawer that slides in from the left/right.                                     | Great for adding menu or side options like Gmail or YouTube.           |
+
+### ⚙️ 12. How do you pass parameters between screens in React Navigation?
+
+# ✅ Passing parameters:
+```
+// Navigate to Details screen and pass a parameter
+navigation.navigate('Details', { userId: 42 });
+
+```
+# ✅ Receiving parameters in the destination screen:
+```
+// DetailsScreen.js
+import React from 'react';
+import { View, Text } from 'react-native';
+
+export default function DetailsScreen({ route }) {
+  const { userId } = route.params;
+  
+  return (
+    <View>
+      <Text>User ID: {userId}</Text>
+    </View>
+  );
+}
+```
+### 13. How can you write platform-specific code in React Native?
+React Native allows you to write platform-specific code for Android and iOS using:
+
+✅ File Name Extensions:
+Use different files for different platforms:
+MyComponent.ios.js
+MyComponent.android.js
+React Native will automatically load the correct file depending on the platform.
+
+### 14. What is a Native Module? When would you use one?
+A Native Module is a bridge between JavaScript code and native platform code (Java/Kotlin for Android and Objective-C/Swift for iOS).
+
+✅ When to use a Native Module:
+To access native device features not available in React Native APIs.
+When you need high performance or want to reuse existing native SDKs.
+
+ - Examples:
+Accessing Bluetooth, file system, or background services
+Integrating third-party native libraries
+Performing heavy computation tasks
+
+### 15. How can you access native device features (e.g., Camera, GPS, etc.) in React Native?
+You can access native device features using community libraries or native modules:
+| Feature            | Library                                                  |
+| ------------------ | -------------------------------------------------------- |
+| Camera             | `react-native-camera` or `expo-camera`                   |
+| GPS/Location       | `@react-native-community/geolocation` or `expo-location` |
+| Contacts           | `react-native-contacts`                                  |
+| Sensors            | `react-native-sensors`                                   |
+| Push Notifications | `react-native-push-notification`                         |
+
+### 16. What is the use of useEffect in React Native?
+The useEffect hook is used to run side effects in functional components. It replaces lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class components.
+
+✅ Common use cases:
+Fetching data from an API
+Subscribing to events (e.g., device orientation)
+Setting up timers or intervals
+Cleaning up resources (like listeners)
+
+### 17. How does the component lifecycle differ in class vs. functional components?
+| Aspect       | Class Components                | Functional Components                      |
+| ------------ | ------------------------------- | ------------------------------------------ |
+| Mounting     | `componentDidMount()`           | `useEffect(() => {}, [])`                  |
+| Updating     | `componentDidUpdate()`          | `useEffect(() => {}, [dependencies])`      |
+| Unmounting   | `componentWillUnmount()`        | `useEffect(() => { return () => {} }, [])` |
+| State        | `this.state`, `this.setState()` | `useState()`                               |
+| Props access | `this.props`                    | function parameter                         |
+
+
+### 18. What state management libraries have you used?
+Common state management libraries in React Native include:
+✅ Libraries I have used:
+Redux – For managing global state using actions and reducers
+Context API – For lightweight global state sharing
+Zustand – A simple and minimal state management library
+MobX (optional, if used) – For observable-based state management
+Each library has its own use cases. For large apps with complex state, Redux is widely preferred.
+
+### 19. What is React Native Reanimated, and how is it used?
+React Native Reanimated is a library for creating high-performance, smooth animations in React Native.
+It allows you to run animations on the UI thread, which improves performance and eliminates jank, especially on low-end devices.
+
+✅ Use cases:
+Gesture-based animations
+Smooth transitions
+Interactions using react-native-gesture-handler
+
+### 20. What is Axios, and how is it different from fetch()?
+✅ Axios:
+A promise-based HTTP client for JavaScript.
+Used to make HTTP requests from the browser or Node.js.
+✅ Differences between Axios and fetch():
+
+| Feature                       | `fetch()`                     | `axios`                         |
+| ----------------------------- | ----------------------------- | ------------------------------- |
+| Built-in                      | Yes                           | No (need to install)            |
+| Response JSON parsing         | Manual (`res.json()`)         | Automatic                       |
+| Request/Response Interceptors | No                            | Yes                             |
+| Timeout support               | No (manual setup)             | Yes                             |
+| Error handling                | Only throws on network errors | Throws on network + HTTP errors |
+
+### 21. What are common debugging techniques in React Native?
+Console Logs – Use console.log() for tracking variables and flow.
+React Native Debugger – Standalone tool with Redux DevTools integration.
+Flipper – Meta’s debugging tool to inspect UI, logs, network, and performance.
+Chrome DevTools – Use Debug JS Remotely for JavaScript debugging in Chrome.
+Breakpoints – Set breakpoints in Chrome or VS Code.
+Error Boundaries – Catch runtime errors in UI components.
+
+### 22. How do you test React Native applications?
+There are three levels of testing:
+Unit Testing – Test functions/components in isolation.
+Integration Testing – Test interactions between components/services.
+End-to-End Testing (E2E) – Test user behavior using tools like Detox.
+
+### 23. How do you handle performance optimization in React Native?
+Use FlatList for large lists instead of ScrollView.
+ - Memoization:
+React.memo to prevent unnecessary re-renders.
+useCallback and useMemo for functions and values.
+Lazy load images using libraries like react-native-fast-image.
+Avoid anonymous functions in JSX.
+Use native drivers in animations (e.g., useNativeDriver: true).
+Minimize re-renders using shouldComponentUpdate or React.memo.
+
+### 24. What is Metro bundler?
+Metro is the JavaScript bundler used by React Native. It:
+Transforms and bundles your JS code and assets.
+Watches for file changes and updates in real-time.
+Optimizes code in production builds.
+
+### 25. What is CodePush, and how does it help in updating apps without going through app stores?
+CodePush is a cloud service (by Microsoft) that allows you to push JavaScript code and asset updates directly to users without app store approval.
+
+✅ Benefits:
+No need to resubmit to Play Store or App Store.
+Faster bug fixes and UI updates.
+Works with React Native CodePush SDK.
+
+✅ Usage:
+Install the CodePush SDK.
+Register your app on App Center.
+Push updates using:
+
+### 26. How does the React Native bridge work?
+The React Native Bridge connects JavaScript (JS) and native code (Java for Android / Objective-C for iOS).
+
+✅ How it works:
+JS runs on its own thread.
+Native modules run on a separate thread.
+The bridge is asynchronous and communicates using JSON messages.
+JS sends commands/data via the bridge to native modules and vice versa.
+
+✅ Limitation:
+The asynchronous bridge can cause performance issues during heavy interactions (e.g., animations), which led to the development of JSI (JavaScript Interface) and React Native Fabric for improved performance.
+
+### 27. What are the performance differences between React Native and Flutter?
+| Feature            | React Native                        | Flutter                                 |
+| ------------------ | ----------------------------------- | --------------------------------------- |
+| Language           | JavaScript                          | Dart                                    |
+| Performance        | Slower UI performance due to bridge | Faster UI; no bridge (uses Skia engine) |
+| Native Look & Feel | Uses native components              | Custom-rendered widgets                 |
+| Ecosystem          | Mature, huge community              | Growing fast, smaller community         |
+| Hot Reload         | Yes                                 | Yes (more stable)                       |
+
+### 28. How would you implement offline support in a React Native app?
+✅ Strategies:
+Store data locally using:
+AsyncStorage
+react-native-mmkv
+Realm or SQLite
+Use a cache layer for API responses.
+Queue actions (like updates) and sync when online.
+Detect connection status using:
+```
+import NetInfo from '@react-native-community/netinfo';
+NetInfo.fetch().then(state => {
+  console.log("Connection type", state.type);
+  console.log("Is connected?", state.isConnected);
+});
+```
+
+### 29. What are the best practices for optimizing images and assets in React Native?
+✅ Tips:
+Use appropriate image sizes (don’t load 4K for thumbnails).
+Use @2x, @3x suffixes for different screen densities.
+Compress images using tools like TinyPNG or Squoosh.
+Use SVGs for icons (with react-native-svg).
+Lazy-load images using react-native-fast-image for caching and better performance.
+Avoid inline base64 images (bad for memory).
+
+### 30. How would you secure sensitive data (e.g., API keys, user data) in a React Native app?
+| Goal                                 | Solution                                                           |
+| ------------------------------------ | ------------------------------------------------------------------ |
+| **Store API Keys**                   | Use `.env` + `react-native-config`, don’t hardcode in JS           |
+| **User Data Storage**                | Use `react-native-keychain`, `SecureStore`, or encrypted storage   |
+| **Secure APIs**                      | Use HTTPS, auth tokens (JWT, OAuth)                                |
+| **Obfuscation**                      | Use JS minifiers + ProGuard (Android)                              |
+| **Prevent Reverse Engineering**      | Use native obfuscation tools, avoid exposing secrets to the client |
+| **Detect Rooted/Jailbroken Devices** | Use libraries like `react-native-root-check`                       |
