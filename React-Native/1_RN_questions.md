@@ -320,6 +320,40 @@ Less readable for inline or dynamic styles.
 Can lead to prop drilling for dynamic styles.
 Slightly more boilerplate.
 
+### Virtual Dom : 
+THE VIRTUAL dom is a programming concept where an ideal or virtual representation is kept in memory and synced with real dom by a library such as ReactDom. This process is called reconcilation.
+
+## 🧠 What is JSI (JavaScript Interface)?
+
+JSI is a lightweight and fast system in React Native that allows JavaScript to directly call native code (like C++ or Java/Swift) without using the old Bridge.
+
+✅ It helps in:
+- Faster communication between JS and native
+- Lower memory usage
+- Better performance in apps
+
+---
+
+## ⚙️ What is Codegen?
+
+Codegen is a tool in React Native that automatically generates the native code (Java/Swift/C++) from JavaScript or TypeScript interfaces.
+
+✅ It helps in:
+- Reducing manual native code
+- Creating TurboModules and Fabric UI components
+- Making JS-to-native communication type-safe and faster
+
+---
+
+🔥 Together, JSI + Codegen = High performance + Easier native module development in React Native.
+
+
+### What is yoga ?
+yoga is an open source cross plateform layout engine that that was developed by Facebook. It was designed to work with React Native and provides a flexible high-performance layout system that can be used to build complex responsive UIs. Yoga is based on the Flexbox layout model, which provides a simple and intuitive way to define the layout of a user interface.
+
+### What is EVENR LOOP ?
+The Event loop is a. machanesim that allows js to handle multiple tasks, such as rendering UI updates,handleing user inputs, and processing network request in a non-blocking way. It oprates in a singel thread envirnment but. can hanlde asynchronous operations efficiently by delegating tasks to other
+
 ### 1. What is React Native, and how is it different from React?
 React Native is a JavaScript framework developed by Meta (Facebook) for building mobile applications for iOS and Android using React.
 React (ReactJS) is used for building web applications using HTML and the DOM.
