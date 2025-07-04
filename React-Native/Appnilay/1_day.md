@@ -89,3 +89,40 @@ const styles = StyleSheet.create({
   },
 });
 ```
+
+### 📘 SectionList in React Native
+The SectionList component in React Native is used to render grouped lists of data, where each group (called a section) has a title and items.
+
+# Features
+- Grouped data display
+- Built-in support for section headers
+- Scroll performance optimized
+- Similar to FlatList but supports sections
+
+### 🔥 What is Firebase?
+Firebase is a Backend-as-a-Service (BaaS) platform developed by Google that helps you build and scale mobile and web apps quickly.
+
+It offers many ready-to-use backend services so that you don't have to build the backend from scratch.
+
+# 🧠 Why Firebase is Used in React Native?
+Firebase makes mobile app development faster and easier because it provides:
+| Feature                | Purpose                                     |
+| ---------------------- | ------------------------------------------- |
+| **Authentication**     | Sign up, login, Google/Facebook login, etc. |
+| **Firestore Database** | Real-time NoSQL database to store data      |
+| **Firebase Storage**   | Store images, videos, files                 |
+| **Cloud Functions**    | Run backend logic without a server          |
+| **Firebase Hosting**   | Host web apps easily                        |
+| **Push Notifications** | Send messages to users (via FCM)            |
+| **Analytics**          | Track user behavior in the app              |
+
+
+### 📄 Dimensions in React Native
+`Dimensions` is a built-in API in React Native used to get the **device screen's width, height, and scale**. It helps make your app responsive across different screen sizes.
+
+
+## 📌 Notes
+ - Dimensions.get('window') returns size excluding status bar.
+ - Dimensions.get('screen') includes everything (use only if necessary).
+ - Always test on multiple devices and orientations.
+
